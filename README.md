@@ -1,1 +1,2 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/sqw6i983lj008k6y?svg=true)](https://ci.appveyor.com/project/Ilya/goblins-remove)
+[![Build status](https://ci.appveyor.com/api/projects/status/npevsjpbui35cpdj?svg=true)](https://ci.appveyor.com/project/Ilya/goblins-game)
+ https://iliakra.github.io/Goblins-game/
