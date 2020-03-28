@@ -5,8 +5,8 @@ body {
 }
 
 .board {
-    height: 230px;
-    width: 230px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -16,21 +16,27 @@ body {
 }
 
 .field {
-    width: 40px;
-    height: 40px; 
+    width: 100px;
+    height: 100px; 
     margin-left: 10px;
     background-color: green;
 }
 
 .goblin-image {
-    width: 40px;
+    width: 80px;
+    margin: 10px;
 }
 
 .game-over {
     border: 2px solid red;
     position: absolute;
-    width: 100px;
+    width: 200px;
     background-color: aqua;
-    top: 80px;
-    left: 50px;
+    top: 200px;
+    left: 120px;
+    text-align: center;
+}
+
+.scores {
+    margin-left: 10px;
 }
