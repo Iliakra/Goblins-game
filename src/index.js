@@ -2,14 +2,16 @@
 /* eslint-disable no-use-before-define */
 
 const newImg = document.createElement('img');
-const amountElement = document.getElementsByClassName('scores-amount')[0];
-const gameOverEl = document.getElementsByClassName('game-over')[0];
 newImg.classList.add('goblin-image');
 newImg.setAttribute('src', './src/image/goblin.png');
-
-const positions = document.getElementsByClassName('field');
 let images = document.getElementsByClassName('goblin-image');
 const goblinImage = images[0];
+
+const amountElement = document.getElementsByClassName('scores-amount')[0];
+const gameOverEl = document.getElementsByClassName('game-over')[0];
+
+
+const positions = document.getElementsByClassName('field');
 const positionsArray = [...positions];
 
 function getRandomInRange(min, max) {
@@ -36,12 +38,13 @@ function removeGoblin() {
     parentElement.appendChild(newImg);
     falled.push(1);
     images = [...images];
-    images[0].addEventListener('click', forClick, true);
+    images[0].addEventListener('click', forClick);
   } else if (images.length > 1) {
     images[0].remove();
   }
   if (falled.length === 5) {
     gameOverEl.style.display = 'block';
+    images[0].removeEventListener('click', forClick);
     clearInterval(timerID);
   }
 }
